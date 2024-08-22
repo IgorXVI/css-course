@@ -5,36 +5,50 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.columns {
+.outer-container {
+    border: 3px dashed black;
+    width: 75vw;
+    height: 200vh;
+    margin: 40px auto;
+}
+
+.inner-container {
+    border: 2px solid blue;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
     color: white;
-    background-color: black;
-    /* column-count: 4;
-    column-width: 250px; */
-    columns: 4 250px;
-    column-rule: 3px solid red;
-    column-gap: 3rem;
-}
-
-.columns p {
-    margin-top: 0;
-}
-
-.columns h2 {
-    margin-top: 0;
-    background-color: gray;
     padding: 1rem;
-    break-inside: avoid;
-    break-before: column;
 }
 
-.columns .quote {
-    margin-top: 2rem;
-    font-size: 3rem;
-    text-align: center;
-    color: gray;
-    column-span: all;
+.absolute {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.nowrap {
-    white-space: nowrap;
+.relative {
+    background-color: red;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+}
+
+.sticky {
+    background-color: black;
+    position: sticky;
+    top: 0;
 }
