@@ -262,6 +262,7 @@ a:active {
     border-color: var(--HEADER-COLOR);
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
+    font-weight: bold;
 }
 
 .contact__button:hover,
